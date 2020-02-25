@@ -9,6 +9,7 @@ void setup(){
   setupMotorEncoder();
   setupPID();
 // Leaderboard crushing
+// By someone in SCSE
 // $$$$$$$$\ $$\       $$\                 $$\                 $$$$$$$\                                     
 // \__$$  __|$$ |      \__|                \__|                $$  __$$\                                    
 //    $$ |   $$$$$$$\  $$\  $$$$$$$\       $$\  $$$$$$$\       $$ |  $$ | $$$$$$\   $$$$$$\  $$$$$$\        
