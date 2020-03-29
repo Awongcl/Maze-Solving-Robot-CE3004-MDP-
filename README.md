@@ -54,12 +54,12 @@ sendGridData function will then concatenate all the grid values before sending o
 With multiple layers of calibration, sampling and fine tuning, Arduino is now able to pass out necessary sensor data in a most precise manner.<br/>
 **1. Motor Control ** <br/>
 The term DORA is the robot name
-
+![](Images/motor.PNG)<br/>
 Ensuring Dora can move in a accurate manner is crucial in this project, as it is the fundamental movements for exploration and fastest path. However,as each individual motors are unique and behaves differently, there’s a high possibility that one motor would be faster than the other. In our case, M1 left is faster than M2 right, this would cause Dora to be unable to move in a straight line and would lean towards the right side. Thus, motor control system must be implemented to guarantee accuracy movements.
 
-**2. PWM matching (Open-loop system)**
+**2. PWM matching (Open-loop system)**<br/>
 Initially PWM matching method is used to match both of the wheel speed.  We’ve taken a sample size of 100 for M1 & M2 rpm at the speed starting from 200 to 350 at an interval of 15. After which forming a linear relation for both M1 & M2 as shown in the graph below.
-
+![](Images/rpm.PNG)<br/>
 
        
 
@@ -69,31 +69,22 @@ However, it has a limitation. This relationship is only applicable to the speed 
 
 With above reasons we decided to use a Closed-Loop System (PID) to ensure maximum accuracy.
 
-**3. PID control (Close-Loop system)**
+**3. PID control (Close-Loop system)**<br/>
 The Closed-Loop System (PID) calculates the error (difference) between M1 and M2 adds the difference to M2 every 5 milliseconds so that both M1 & M2 are moving at the same speed. This is possible by utilizing the feedback from the encoder.
-
-
-
+![](Images/pid.PNG)<br/>
 The term PID consists 3 terms:
 
-Proportional term  (Kp)
+**Proportional term  (Kp)**
 Produces an output value that is proportional to the current error value. A higher P value will result in a large change in the output value, therefor if  P is too large, the system might be unstable.
-Integral term (Ki)
+**Integral term (Ki)**
 The integral term accelerates the movement of the process towards set point and eliminates the residual steady-state error that occurs with a pure proportional controller.
-Derivative term(Kd)
+**Derivative term(Kd)**
 Derivative action predicts system behavior and thus improves settling time and stability of the system.
 For our bot Dora, kp = 18, ki = 8, kd = 0 are used for the final PID values after multiple experiments, which gives us the most accurate movements.
 
-**4. Comparison and conclusion**
+**4. Comparison and conclusion**<br/>
 Below shows 2 graph of rpm vs time.  Blue line represents slower right wheel and Orange line represents faster left wheel.
-
-
-
-Open-Loop control
-
-
-
-       Closed-Loop control 
+![](Images/compare.PNG)<br/>
 
 The main target of using closed loop control is to match the wheel speed, allowing Dora to move in a straight line or turn in a certain angle pressingly.
 
@@ -103,8 +94,6 @@ In comparison, the advantage of close loop control allows the wheels to be synch
 
 The last factor we have to consider for the motor control is the battery voltage as it actually makes a huge difference at different voltage stages.
 
-
-
-6V Battery
+**6V Battery**
 
 Different voltage will result in different performance as it determines the power the wheels will be provided. After continuous testing we found out that the optimal voltage for Dora is between 6.1 – 6.2 volts. Too much or too less will cause noticeable over/under turns.
