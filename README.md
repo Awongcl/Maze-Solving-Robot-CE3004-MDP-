@@ -1,5 +1,5 @@
 # Maze-Solving-Robot (Hardware)
-
+![](Images/Dora.gif) <br/>
 The goal of this project is to develop a robot that can nevigate a grid maze.
 The whole project can be split into 4 parts :
 1. Algorithm
