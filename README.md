@@ -13,7 +13,7 @@ Thus, this page will just be focus on the matters regarding to Arduino.</br>
 The full WIKI link is anyone is interested!</br>
 Link: https://blogs.ntu.edu.sg/scemdp-1920s1-g16/</br>
 
-## Requirments:
+## Requirments (For Arduino):
 1. The robot must be able to perform accurate straight line, turnings and calibrations to explore the 200cm X 150cm X 15cm arena with obstacles placed in different locations within the arena.
 2. Obstacles in the arena must be detected and avoided with 6 calibrated infra-red sensors.
 
