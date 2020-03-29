@@ -10,12 +10,14 @@ The whole project can be split into 4 parts :
 My responsiblity for this project is to ensure the robot performs precisive movements to avoid near by obstacles,
 by detecting nearby objects using different IR sensors, which is based on Arduino. </br>
 Thus, this page will just be focus on the matters regarding to Arduino.
+The full WIKI link : https://blogs.ntu.edu.sg/scemdp-1920s1-g16/
 
 ## Requirments:
 1. The robot must be able to perform accurate straight line, turnings and calibrations to explore the 200cm X 150cm X 15cm arena with obstacles placed in different locations within the arena.
 2. Obstacles in the arena must be detected and avoided with 6 calibrated infra-red sensors.
 
 ## Implementation:
+## Sensors
 **1. Sensors overview**</br>
 ![](Images/sensors.PNG)<br/>
 Usage : 5x short range sensors, 1x long range sensor
@@ -52,6 +54,7 @@ sendGridData function will then concatenate all the grid values before sending o
 
 
 With multiple layers of calibration, sampling and fine tuning, Arduino is now able to pass out necessary sensor data in a most precise manner.<br/>
+## Motors
 **1. Motor Control** <br/>
 The term DORA is the robot name<br/>
 ![](Images/motor.PNG)<br/>
