@@ -19,6 +19,7 @@ Thus, this page will just be focus on the matters regarding to Arduino.
 1. Sensors overview</br>
 GP2Y0A21YK  short range sensor</br>
 GP2Y0A2YK long range sensor</br>
+![](Images/sensors.jpg)
 Usage : 5x short range sensors, 1x long range sensor
 
 They are known as A0,A1,A2,A3,A4 for the short-range sensor and A5 for the long-range sensor. The IR sensors projects and receive infrared light in order to calculate the distance between the sensor and the object. This will be very useful during the exploration of the arena.
