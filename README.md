@@ -50,7 +50,7 @@ Accurate sensor values will be converted to grid value by functions , allowing t
 e.g 1 = 10 cm, 2 = 20 cm, 3 = 30 cm, 4 = 40 cm
 
 sendGridData function will then concatenate all the grid values before sending out. Format is as follows : "SDATA:SRFL:SRFC:SRFR:SRL:SRR:SRL"
-![](Images/sendgrid.PNG)<br/>
+![](Images/Sendgrid.PNG)<br/>
 
 
 With multiple layers of calibration, sampling and fine tuning, Arduino is now able to pass out necessary sensor data in a most precise manner.
