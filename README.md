@@ -9,8 +9,9 @@ The whole project can be split into 4 parts :
 
 My responsiblity for this project is to ensure the robot performs precisive movements to avoid near by obstacles,
 by detecting nearby objects using different IR sensors, which is based on Arduino. </br>
-Thus, this page will just be focus on the matters regarding to Arduino.
-The full WIKI link : https://blogs.ntu.edu.sg/scemdp-1920s1-g16/
+Thus, this page will just be focus on the matters regarding to Arduino.</br>
+The full WIKI link is anyone is interested!</br>
+Link: https://blogs.ntu.edu.sg/scemdp-1920s1-g16/</br>
 
 ## Requirments:
 1. The robot must be able to perform accurate straight line, turnings and calibrations to explore the 200cm X 150cm X 15cm arena with obstacles placed in different locations within the arena.
