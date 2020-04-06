@@ -1,6 +1,6 @@
 # Maze-Solving-Robot (Hardware)
 ![](Images/Dora.gif) <br/>
-The goal of this project is to develop a robot that can nevigate a grid maze.
+The goal of this project is to develop a robot that can nevigate a grid maze. This will required the integration of software and hardware.
 The whole project can be split into 4 parts :
 1. Algorithm
 2. Communication (Rpi)
@@ -10,7 +10,7 @@ The whole project can be split into 4 parts :
 My responsiblity for this project is to ensure the robot performs precisive movements to avoid near by obstacles,
 by detecting nearby objects using different IR sensors, which is based on Arduino. </br>
 Thus, this page will just be focus on the matters regarding to Arduino.</br>
-The full WIKI link is anyone is interested!</br>
+The full WIKI link :</br>
 Link: https://blogs.ntu.edu.sg/scemdp-1920s1-g16/</br>
 
 ## Requirments (For Arduino):
